@@ -1,0 +1,14 @@
+# Virtual environments and dependencies
+venv/
+.env
+
+# Django/Database
+db.sqlite3
+
+# Python generated files
+__pycache__/
+*.py[cod]
+
+# IDE/OS files
+.idea/
+.DS_Store
