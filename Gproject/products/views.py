@@ -1,5 +1,5 @@
 from django.shortcuts import render # type: ignore
-
+from . models import Product
 # Create your views here.
 def index(request):
     return render(request,'index.html')
@@ -12,6 +12,9 @@ def list_products(request):
    Returns:
        _type_:_description_
     """
+
+    product_list=Product.objects.all()
+    context={'products':product_list}
 
     return render(request,'products.html')
 def detail_product(request):
